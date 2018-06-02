@@ -14,7 +14,9 @@ Main Objectives of our solution is an application that can make life easier and 
 
 Hence an application which acts as a one stop solution for developer’s obstacles.
 
-The source code can be found in the [`/src/App`](https://github.com/Team-Igneel/Postmate/tree/master/src/App) directory/folder. The back-end APIs can be found in the [`/src/Backend/postmate`](https://github.com/Team-Igneel/Postmate/tree/master/src/Backend/postmate) folder
+The source code can be found in the [`/src/App`](https://github.com/Team-Igneel/Postmate/tree/master/src/App) directory/folder.
+
+The back-end APIs can be found in the [`/src/Backend/postmate`](https://github.com/Team-Igneel/Postmate/tree/master/src/Backend/postmate) folder
 
 # Team Info :
 Team Name : IGNEEL
