@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Postmate.NewQuestion"
+             Title="Post a Question">
+    
+    <ScrollView RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+        <StackLayout VerticalOptions="Center" 
+                     Margin="15,20,15,0"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+            <Frame BackgroundColor="#ffffff"
+                   Padding="15,10,15,10"
+                   CornerRadius="2"
+                   HasShadow="True"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+                <StackLayout VerticalOptions="Center"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+                    
+                    <Label Text="Title" VerticalTextAlignment="Start" TextColor="Black"/>
+                    <Entry x:Name="question_title" Placeholder="Your Question" PlaceholderColor="#bcbcbc"
+                           TextColor="Black" FontAttributes="None"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+
+                </StackLayout>
+
+            </Frame>
+
+            <Frame BackgroundColor="#ffffff"
+                   Margin="0,10,0,0"
+                   Padding="15,10,15,10"
+                   CornerRadius="2"
+                   HasShadow="True"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+                
+                <StackLayout VerticalOptions="Center"
+                             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+                    <Label Text="Details" VerticalTextAlignment="Start" TextColor="Black"/>
+                    <Editor x:Name="question_description" IsSpellCheckEnabled="True" HeightRequest="500"
+                            TextColor="Black" FontAttributes="None"
+                            Margin="10,0,10,5"/>
+
+                </StackLayout>
+
+            </Frame>
+
+            <Frame BackgroundColor="#ffffff"
+                   Margin="0,10,0,0"
+                   Padding="15,10,15,10"
+                   CornerRadius="2"
+                   HasShadow="True"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+                <StackLayout VerticalOptions="Center"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+                    
+                    <Label Text="Tags" VerticalTextAlignment="Start" TextColor="Black"/>
+                    <Entry x:Name="question_tags" Placeholder="5 Tags For Question. Seperate by \;" PlaceholderColor="#bcbcbc"
+                           TextColor="Black" FontAttributes="None"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+
+                </StackLayout>
+
+            </Frame>
+
+            <Button x:Name="submitButton" Text="SUBMIT" Clicked="submitButton_Clicked" TextColor="White" 
+                    BackgroundColor="#000000" FontAttributes="None" Margin="0,10,0,20" CornerRadius="30"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

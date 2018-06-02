@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Postmate.Settings"
+             Title="Account Settings">
+
+    <ContentPage x:Name="Setting" Title="Login"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+        <StackLayout Margin="20,80,20,0"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+            
+                <StackLayout VerticalOptions="Center"
+                             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+                <Frame BackgroundColor="#ffffff"
+                   Padding="15,10,15,10"
+                   CornerRadius="2"
+                   HasShadow="True"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+                    
+                    <StackLayout VerticalOptions="Center"
+                                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+                        <Entry x:Name="soUsername" Placeholder="@ StackOverflow Username" PlaceholderColor="#bcbcbc"
+                           TextColor="#000000" FontAttributes="None"
+                           HorizontalTextAlignment="Center" Margin="30, 10, 50, 10"/>
+                        <Entry x:Name="soPassword" Placeholder="@ StackOverflow Password" PlaceholderColor="#bcbcbc"
+                           TextColor="#000000" FontAttributes="None" IsPassword="True"
+                           HorizontalTextAlignment="Center" Margin="30, 0, 50, 10"/>
+
+                        <Entry x:Name="redditUsername" Placeholder="@ Reddit Username" PlaceholderColor="#bcbcbc"
+                           TextColor="#000000" FontAttributes="None"
+                           HorizontalTextAlignment="Center" Margin="30, 0, 50, 10"/>
+                        <Entry x:Name="redditPassword" Placeholder="@ Reddit Password" PlaceholderColor="#bcbcbc"
+                           TextColor="#000000" FontAttributes="None" IsPassword="True"
+                           HorizontalTextAlignment="Center" Margin="30, 0, 50, 30"/>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Button x:Name="SaveInfo" Text="SAVE" Clicked="Save_Clicked" TextColor="White" 
+                    BackgroundColor="#000000" FontAttributes="None" Margin="50, 30, 50, 10" CornerRadius="30"/>
+                    
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage>
+
+</CarouselPage>

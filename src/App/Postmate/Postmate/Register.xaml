@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Postmate.Register"
+             Title="Register - 2">
+    <ScrollView>
+        <StackLayout Margin="20,20,20,10"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+                <Entry x:Name="name_register"
+                       Placeholder="@ Full Name"
+                       PlaceholderColor="#bcbcbc"
+                       Margin="50, 50, 50, 5"
+                       TextColor="#000000"
+                       FontAttributes="None"
+                       HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="age_register"
+                       Placeholder="@ Age"
+                       PlaceholderColor="#bcbcbc"
+                       Margin="50, 0, 50, 10"
+                       TextColor="#000000"
+                       FontAttributes="None"  
+                       HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="userEmail_Sign"
+                       Placeholder="@ Email ID"
+                       PlaceholderColor="#bcbcbc"
+                       Margin="50, 0, 50, 10"
+                       TextColor="#000000"
+                       FontAttributes="None"  
+                       HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="phone_register"
+                       Placeholder="@ Phone Number"
+                       PlaceholderColor="#bcbcbc"
+                       Margin="50, 0, 50, 10"
+                       TextColor="#000000"
+                       FontAttributes="None"  
+                       HorizontalTextAlignment="Center"/>
+
+                <Button x:Name="registerButton" Text="FINISH"
+                        Clicked="registerButton_Clicked"
+                        TextColor="White"
+                        VerticalOptions="EndAndExpand"
+                        BackgroundColor="#000000"
+                        FontAttributes="None"
+                        Margin="60, 50, 60, 10"
+                        CornerRadius="30"/>
+
+            </StackLayout>
+
+            <Label Text="POSTMATE" TextColor="#000000"
+                   VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold" FontSize="Large"
+                   Margin="0, 0, 0, 20"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

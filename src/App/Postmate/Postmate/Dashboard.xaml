@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:local="clr-namespace:Postmate"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Postmate.Dashboard"
+            NavigationPage.HasNavigationBar="True"
+            BarTextColor="White" BarBackgroundColor="#000000"
+            Title="Postmate">
+    <ContentPage Title="Previous Questions" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <RelativeLayout>
+            
+            <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                     Margin="2,15,2,10">
+
+                <Label Text="No Previous Questions Asked" IsVisible="False" TextColor="Black"
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                       Margin="15,15,15,15" x:Name="tempLable"/>
+                
+                <ListView x:Name="previousQuestions_ListView" SeparatorColor="LightGray" HasUnevenRows="True"
+                              Margin="20,0,20,10"
+                                  ItemSelected="previousQuestions_ListView_ItemSelected"
+                                  IsPullToRefreshEnabled="True" Refreshing="previousQuestionsListView_Refresh">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding question_title}" VerticalTextAlignment="Start" TextColor="Black"/>
+                                        <Label Text="{Binding question_posted_date}" VerticalTextAlignment="Start" TextColor="Gray"/>
+                                    </StackLayout>
+                                    <Label Text="{Binding question_reply_count}" VerticalTextAlignment="Start" TextColor="DarkSlateGray"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="EndAndExpand" 
+                         HorizontalOptions="EndAndExpand"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Width}"
+                         RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height}">
+
+                <Button x:Name="newQuestion_Button"
+                        Text="+"
+                        Clicked="newQuestion_Clicked"
+                        BackgroundColor="#000000"
+                        HorizontalOptions="EndAndExpand" 
+                        VerticalOptions="EndAndExpand"
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        BorderRadius="30"
+                        TextColor="#ffffff"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Margin="0,0,20,20"/>
+            </StackLayout>
+        </RelativeLayout>
+    </ContentPage>
+
+    <local:Settings />
+</TabbedPage>

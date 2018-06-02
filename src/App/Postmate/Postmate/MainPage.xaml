@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Postmate"
+             x:Class="Postmate.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage x:Name="loginPage" Title="Login" Padding="15,0,15,0"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+
+        <StackLayout VerticalOptions="Center"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+            <Label Text="User Login" VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" FontAttributes="Bold" />
+            <Frame BackgroundColor="#ffffff"
+               CornerRadius="2"
+               HasShadow="True"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+               >
+                <StackLayout VerticalOptions="Center"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+                    <Entry x:Name="userEmail_Login" Placeholder="Registered Email Id/User Name..." PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+                    <Entry x:Name="userPassword_Login" Placeholder="Password..." PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White" IsPassword="True"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+                    <Button x:Name="loginButton" Text="Log In" Clicked="loginButton_Clicked" TextColor="White" 
+                    BackgroundColor="#000000" FontAttributes="None" Margin="10,0,10,5" CornerRadius="30"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage x:Name="registerPage"  Title="Register" Padding="15,0,15,0"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <StackLayout VerticalOptions="Center"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+            <Label Text="User SignUp (Part 1)" VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" FontAttributes="Bold" />
+            <Frame BackgroundColor="#ffffff"
+               CornerRadius="2"
+               HasShadow="True"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+               >
+                <StackLayout VerticalOptions="Center"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+                   <Entry x:Name="username_register" Placeholder="User Name" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+                   <Entry x:Name="password_register" Placeholder="Password" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5" IsPassword="True"/>
+                    <Button x:Name="nextButton" Text="Next" Clicked="nextButton_Clicked" TextColor="White" 
+                    BackgroundColor="#000000" FontAttributes="None" Margin="10,0,10,5" CornerRadius="30"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+
+    
+
+</CarouselPage>
