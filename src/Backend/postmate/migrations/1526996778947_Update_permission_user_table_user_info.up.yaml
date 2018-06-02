@@ -1,0 +1,14 @@
+- args:
+    permission:
+      columns:
+      - u_id_incre
+      - u_name
+      - u_SO_username
+      - u_SO_password
+      - u_reddit_username
+      - u_reddit_password
+      - u_id_internal
+      filter: {}
+    role: user
+    table: user_info
+  type: create_select_permission

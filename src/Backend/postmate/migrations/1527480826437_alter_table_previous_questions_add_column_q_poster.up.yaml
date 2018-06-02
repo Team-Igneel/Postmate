@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "previous_questions" ADD COLUMN "q_poster" integer NOT NULL DEFAULT
+      0
+  type: run_sql

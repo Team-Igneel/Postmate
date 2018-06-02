@@ -1,0 +1,10 @@
+clusters:
+- alias: postmateCluster
+  config:
+    configmap: controller-conf
+    namespace: fillip72-hasura
+  data: null
+  kubeContext: fillip72
+  name: fillip72
+defaultCluster: ""
+isQuickStart: ""

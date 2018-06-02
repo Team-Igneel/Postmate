@@ -1,0 +1,6 @@
+clusters:
+- alias: postmateCluster
+  data: null
+  infra:
+    provider: hasura-free
+version: v1

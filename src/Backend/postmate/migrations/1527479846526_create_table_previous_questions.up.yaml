@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "previous_questions"("q_id" serial NOT NULL, "q_title" text
+      NOT NULL, "q_desc" text NOT NULL, "q_tags" text NOT NULL, "q_poster" text NOT
+      NULL, "q_post_date" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("q_id")
+      )
+  type: run_sql
+- args:
+    name: previous_questions
+  type: add_existing_table_or_view

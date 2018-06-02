@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "user_info"("u_id_incre" serial NOT NULL, "u_name" text NOT
+      NULL, "u_SO_username" text NOT NULL, "u_SO_password" text NOT NULL, "u_reddit_username"
+      text NOT NULL, "u_reddit_password" text NOT NULL, "u_id_internal" integer NOT
+      NULL, PRIMARY KEY ("u_id_incre") )
+  type: run_sql
+- args:
+    name: user_info
+  type: add_existing_table_or_view

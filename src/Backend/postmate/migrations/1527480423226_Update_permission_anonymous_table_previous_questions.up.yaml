@@ -1,0 +1,17 @@
+- args:
+    role: anonymous
+    table: previous_questions
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - q_desc
+      - q_tags
+      - q_poster
+      - q_id
+      - q_post_date
+      - q_title
+      filter: {}
+    role: anonymous
+    table: previous_questions
+  type: create_select_permission

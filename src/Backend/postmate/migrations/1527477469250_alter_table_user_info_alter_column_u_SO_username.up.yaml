@@ -1,0 +1,6 @@
+- args:
+    sql: ALTER TABLE ONLY "user_info" ALTER COLUMN "u_SO_username" SET DEFAULT 'None';
+  type: run_sql
+- args:
+    sql: ALTER TABLE "user_info" ALTER COLUMN "u_SO_username" SET NOT NULL;
+  type: run_sql
