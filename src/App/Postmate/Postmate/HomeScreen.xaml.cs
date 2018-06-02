@@ -22,24 +22,24 @@ namespace Postmate
 
         private void newUser_Button_Clicked(object sender, EventArgs e)
         {
-            newUser_Button.BackgroundColor = Color.FromHex("#bcbcbc");
-            newUser_Button.TextColor = Color.FromHex("#000000");
+            newUser_Button.BackgroundColor = Color.FromHex("c79400");
+            //newUser_Button.TextColor = Color.FromHex("#000000");
 
             Navigation.PushAsync(new Register_initial());
 
-            newUser_Button.BackgroundColor = Color.FromHex("#000000");
-            newUser_Button.TextColor = Color.FromHex("#ffffff");
+            newUser_Button.BackgroundColor = Color.FromHex("ffc400");
+            //newUser_Button.TextColor = Color.FromHex("#ffffff");
         }
 
         private void existingUser_Button_Clicked(object sender, EventArgs e)
         {
-            existingUser_Button.BackgroundColor = Color.FromHex("#bcbcbc");
-            existingUser_Button.TextColor = Color.FromHex("#000000");
+            existingUser_Button.BackgroundColor = Color.FromHex("c79400");
+            //existingUser_Button.TextColor = Color.FromHex("#000000");
 
             Navigation.PushAsync(new LoginPage());
 
-            existingUser_Button.BackgroundColor = Color.FromHex("#000000");
-            existingUser_Button.TextColor = Color.FromHex("#ffffff");
+            existingUser_Button.BackgroundColor = Color.FromHex("ffc400");
+            //existingUser_Button.TextColor = Color.FromHex("#ffffff");
         }
     }
 }

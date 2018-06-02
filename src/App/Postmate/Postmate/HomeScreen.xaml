@@ -2,32 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Postmate.HomeScreen"
-             Title="Postmate">
+             NavigationPage.HasNavigationBar="False" BackgroundColor="White">
 
-    <Grid x:Name="mainGrid" RowSpacing="0" ColumnSpacing="20" Padding="20,20,20,20">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <ScrollView RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                 Margin="20, 0, 20, 20">
 
-        <Button x:Name="newUser_Button" Text="New User"
+            <Image Source="https://i.imgur.com/DAw4iIB.png"
+               Margin="0, 90, 0, 0"/>
+
+            <Image Source="https://i.imgur.com/XlJ1Vn8.png"
+               Margin="0, 20, 0, 0"/>
+
+            <Button x:Name="newUser_Button"
+                Text="New User"
+                Margin="10, 20, 0, 0"
+                CornerRadius="30"
                 Clicked="newUser_Button_Clicked"
                 FontAttributes="Bold" FontSize="Large"
-                Grid.Row="1" Grid.Column="0"
-                BackgroundColor="Black"  TextColor="White" />
+                BackgroundColor="#ffc400"  TextColor="White" />
 
-        <Button x:Name="existingUser_Button" Text="Existing User"
+            <Button x:Name="existingUser_Button" 
+                Text="Existing User"
+                Margin="10, 20, 0, 0"
+                CornerRadius="30"
                 Clicked="existingUser_Button_Clicked"
                 FontAttributes="Bold" FontSize="Large"
-                Grid.Row="1" Grid.Column="1"
-                BackgroundColor="Black"  TextColor="White" />
+                BackgroundColor="#ffc400"  TextColor="White" />
 
-        <Label x:Name="Tagline_Label" Grid.ColumnSpan="2" Grid.RowSpan="3" VerticalOptions="End" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="Tagline_Label"
+               VerticalOptions="End"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,20,0,0"/>
 
-    </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

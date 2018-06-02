@@ -31,14 +31,14 @@ namespace Postmate
 
         private void SubmitButtonColorReset()
         {
-            submitButton.BackgroundColor = Color.FromHex("#000000");
+            submitButton.BackgroundColor = Color.FromHex("#ffc400");
             submitButton.TextColor = Color.FromHex("#ffffff");
             submitButton.Text = "SUBMIT";
         }
 
         private async void submitButton_Clicked(object sender, EventArgs e)
         {
-            submitButton.BackgroundColor = Color.FromHex("#bcbcbc");
+            submitButton.BackgroundColor = Color.FromHex("#c79400");
             submitButton.TextColor = Color.FromHex("#000000");
             submitButton.Text = "Posting...";
 

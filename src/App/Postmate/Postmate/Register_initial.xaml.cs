@@ -36,14 +36,14 @@ namespace Postmate
 
         private void NextButtonColorReset()
         {
-            nextButton.BackgroundColor = Color.FromHex("#000000");
+            nextButton.BackgroundColor = Color.FromHex("#c79400");
             nextButton.TextColor = Color.FromHex("#ffffff");
             nextButton.Text = "NEXT";
         }
 
         private async void nextButton_Clicked(object sender, EventArgs e)
         {
-            nextButton.BackgroundColor = Color.FromHex("#bcbcbc");
+            nextButton.BackgroundColor = Color.FromHex("#ffc400");
             nextButton.TextColor = Color.FromHex("#000000");
             nextButton.Text = "Please Wait...";
 

@@ -14,7 +14,7 @@ namespace Postmate
             //MainPage = new NavigationPage(new MainPage());
             MainPage = new NavigationPage(new HomeScreen())
             {
-                BarBackgroundColor = Color.FromHex("000000"),
+                BarBackgroundColor = Color.FromHex("ffc400"),
                 BarTextColor = Color.White
             };
         }

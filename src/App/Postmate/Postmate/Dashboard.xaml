@@ -4,7 +4,7 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="Postmate.Dashboard"
             NavigationPage.HasNavigationBar="True"
-            BarTextColor="White" BarBackgroundColor="#000000"
+            BarTextColor="White" BarBackgroundColor="#ffc400"
             Title="Postmate">
     <ContentPage Title="Previous Questions" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
@@ -51,7 +51,7 @@
                 <Button x:Name="newQuestion_Button"
                         Text="+"
                         Clicked="newQuestion_Clicked"
-                        BackgroundColor="#000000"
+                        BackgroundColor="#ffc400"
                         HorizontalOptions="EndAndExpand" 
                         VerticalOptions="EndAndExpand"
                         WidthRequest="60"

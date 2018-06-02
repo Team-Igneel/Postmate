@@ -29,14 +29,14 @@ namespace Postmate
 
         private void SaveButtonColorReset()
         {
-            SaveInfo.BackgroundColor = Color.FromHex("#000000");
+            SaveInfo.BackgroundColor = Color.FromHex("#ffc400");
             SaveInfo.TextColor = Color.FromHex("#ffffff");
             SaveInfo.Text = "SAVE";
         }
 
         private async void Save_Clicked(object sender, EventArgs e)
         {
-            SaveInfo.BackgroundColor = Color.FromHex("#bcbcbc");
+            SaveInfo.BackgroundColor = Color.FromHex("#c79400");
             SaveInfo.TextColor = Color.FromHex("#000000");
             SaveInfo.Text = "Saving...";
 

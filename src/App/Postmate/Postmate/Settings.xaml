@@ -46,8 +46,14 @@
 
                 </Frame>
 
-                <Button x:Name="SaveInfo" Text="SAVE" Clicked="Save_Clicked" TextColor="White" 
-                    BackgroundColor="#000000" FontAttributes="None" Margin="50, 30, 50, 10" CornerRadius="30"/>
+                <Button x:Name="SaveInfo"
+                        Text="SAVE"
+                        Clicked="Save_Clicked"
+                        TextColor="White" 
+                    BackgroundColor="#ffc400"
+                        FontAttributes="None"
+                        Margin="50, 30, 50, 10"
+                        CornerRadius="30"/>
                     
             </StackLayout>
             

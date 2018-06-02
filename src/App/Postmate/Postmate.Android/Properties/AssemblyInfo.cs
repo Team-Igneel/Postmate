@@ -12,6 +12,7 @@ using Android.App;
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Postmate.Android")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: Application(Icon = "@mipmap/logo")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

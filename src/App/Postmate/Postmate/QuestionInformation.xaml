@@ -100,9 +100,12 @@
 
             </Frame>
 
-            <Label Text="POSTMATE" TextColor="#000000"
-                   VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"
-                   FontAttributes="Bold" FontSize="Large"
+            <Label Text="POSTMATE"
+                   TextColor="#000000"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"
+                   FontSize="Large"
                    Margin="0, 20, 0, 10"/>
 
         </StackLayout>

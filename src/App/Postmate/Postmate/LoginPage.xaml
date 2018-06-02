@@ -26,7 +26,7 @@
                         Clicked="loginButton_Clicked"
                         TextColor="White"
                         VerticalOptions="EndAndExpand"
-                        BackgroundColor="#000000"
+                        BackgroundColor="#ffc400"
                         FontAttributes="None"
                         Margin="60, 50, 60, 10"
                         CornerRadius="30"/>

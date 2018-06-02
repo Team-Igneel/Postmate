@@ -43,14 +43,14 @@ namespace Postmate
 
         private void LoginButtonColorReset()
         {
-            loginButton.BackgroundColor = Color.FromHex("#000000");
+            loginButton.BackgroundColor = Color.FromHex("#ffc400");
             loginButton.TextColor = Color.FromHex("#ffffff");
             loginButton.Text = "Log In";
         }
 
         private async void loginButton_Clicked(object sender, EventArgs e)
         {
-            loginButton.BackgroundColor = Color.FromHex("#bcbcbc");
+            loginButton.BackgroundColor = Color.FromHex("#c79400");
             loginButton.TextColor = Color.FromHex("#000000");
             loginButton.Text = "Authenticating...";
 

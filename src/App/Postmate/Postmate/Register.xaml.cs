@@ -28,14 +28,14 @@ namespace Postmate
 
         private void FinishButtonColorReset()
         {
-            registerButton.BackgroundColor = Color.FromHex("#000000");
+            registerButton.BackgroundColor = Color.FromHex("#ffc400");
             registerButton.TextColor = Color.FromHex("#ffffff");
             registerButton.Text = "FINISH";
         }
 
         private async void registerButton_Clicked(object sender, EventArgs e)
         {
-            registerButton.BackgroundColor = Color.FromHex("#bcbcbc");
+            registerButton.BackgroundColor = Color.FromHex("#c79400");
             registerButton.TextColor = Color.FromHex("#000000");
             registerButton.Text = "Finishing Up...";
 
