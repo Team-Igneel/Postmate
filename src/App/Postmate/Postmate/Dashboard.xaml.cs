@@ -28,8 +28,8 @@ namespace Postmate
 		{
 			InitializeComponent ();
             
-            _client.BaseAddress = new System.Uri("https://data.fillip72.hasura-app.io/");
-            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));//ACCEPT header
+            //_client.BaseAddress = new System.Uri("https://data.fillip72.hasura-app.io/");
+            //_client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));//ACCEPT header
 
         }
 
@@ -93,7 +93,7 @@ namespace Postmate
                 try
                 {
                     //Console.WriteLine("Data of Content : " + json_string);
-                    var result = await _client.PostAsync("/v1/query", json_string);
+                    var result = await _client.PostAsync("https://data.fillip72.hasura-app.io/v1/query", json_string);
 
                     string resultContent = await result.Content.ReadAsStringAsync();
 
