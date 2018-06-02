@@ -1,7 +1,7 @@
 # Postmate (Hasura HackDev Challenge - 2018)
 This application is built for the sole purpose of the [`Hasura HackDev Challenge - 2018`](https://www.hackerearth.com/sprints/hasura-hackdev-challenge/). 
 
-The source code can be found in the [`app`](https://github.com/Team-Igneel/Postmate/tree/master/src/App) directory/folder. The back-end APIs can be found in the [`api`](https://github.com/Team-Igneel/Postmate/tree/master/src/Backend/postmate) folder
+The source code can be found in the [`/src/App`](https://github.com/Team-Igneel/Postmate/tree/master/src/App) directory/folder. The back-end APIs can be found in the [`/src/Backend/postmate`](https://github.com/Team-Igneel/Postmate/tree/master/src/Backend/postmate) folder
 
 # Team Info :
 Team Name : IGNEEL
