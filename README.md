@@ -1,5 +1,18 @@
 # Postmate (Hasura HackDev Challenge - 2018)
 This application is built for the sole purpose of the [`Hasura HackDev Challenge - 2018`](https://www.hackerearth.com/sprints/hasura-hackdev-challenge/). 
+This application aims to complete the challenge posed under “open” theme of Hasura HackDev Challenge. 
+Based on our analysis and requirement and interaction with few developers, we opted to build a solution that will provide developers a one stop solution for querying.
+Main Objectives of our solution is an application that can make life easier and more productive for a developer. To Build something that would save time and effort so that:
+
+->There is an integrated option for the developers to post their queries.
+
+->Focus is on maintenance of only one platform which can take care of other platforms.
+
+->Making social sharing of queries easier.
+
+->There is an increase in developer’s efficiency.
+
+Hence an application which acts as a one stop solution for developer’s obstacles.
 
 The source code can be found in the [`/src/App`](https://github.com/Team-Igneel/Postmate/tree/master/src/App) directory/folder. The back-end APIs can be found in the [`/src/Backend/postmate`](https://github.com/Team-Igneel/Postmate/tree/master/src/Backend/postmate) folder
 
