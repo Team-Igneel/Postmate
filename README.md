@@ -20,6 +20,20 @@ The source code can be found in the [`/src/App`](https://github.com/Team-Igneel/
 
 The back-end APIs can be found in the [`/src/Backend/postmate`](https://github.com/Team-Igneel/Postmate/tree/master/src/Backend/postmate) folder
 
+
+
+Details:
+
+[Interactive Prototype ](https://adobe.ly/2JqQwwt)
+
+[Working APK](https://bit.ly/2xDvRRa)
+
+[Presentation Link ](https://bit.ly/2JlLmlo)
+
+[Source Code](https://github.com/Team-Igneel/Postmate)
+
+[Demonstration Video](https://bit.ly/2Ja5uDL)
+
 # Team Info :
 Team Name : IGNEEL
 
@@ -62,15 +76,4 @@ Some screens are shown below :
 ![UWP Registration](https://github.com/Team-Igneel/Postmate/blob/master/screens/uwp/SignUp%20-%201.PNG?raw=true)
 
 
-Details:
-
-Interactive Prototype : https://adobe.ly/2JqQwwt
-
-Working APK : https://bit.ly/2xDvRRa
-
-Presentation Link : https://bit.ly/2JlLmlo
-
-Source Code : https://github.com/Team-Igneel/Postmate
-
-Demonstration Video : https://bit.ly/2Ja5uDL
 
