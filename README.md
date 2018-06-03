@@ -60,3 +60,13 @@ Some screens are shown below :
 ![](https://github.com/Team-Igneel/Postmate/blob/master/screens/uwp/QuestionPosted.PNG?raw=true)
 
 ![UWP Registration](https://github.com/Team-Igneel/Postmate/blob/master/screens/uwp/SignUp%20-%201.PNG?raw=true)
+
+
+Details:
+
+Interactive Prototype : https://adobe.ly/2JqQwwt
+Working APK : https://bit.ly/2xDvRRa
+Presentation Link : https://bit.ly/2JlLmlo
+Source Code : https://github.com/Team-Igneel/Postmate
+Demonstration Video : https://bit.ly/2Ja5uDL
+
